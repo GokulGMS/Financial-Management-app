@@ -1,31 +1,89 @@
-# Java Finance Management App
+# Personal Finance Management System 💰
 
 ## Overview
-This Java-based Personal Finance Management Tool is designed to help users efficiently manage their finances by tracking income, expenses, budgets, and financial goals. With an intuitive interface, users can categorize their spending, set personalized goals, and receive alerts for overspending or upcoming payments. Visual tools like graphs and charts provide insights into spending habits, enabling informed financial decisions.
+The Personal Finance Management System is an application developed using Java Swing on Apache NetBeans IDE and MySQL for Database Management. This system enables users to monitor their financial habits, track previous transactions, and visualize monthly financial data using charts.
+
+## Software Used
+- **IDE:** Apache NetBeans
+- **Database:** MySQL
+- **Java UI Framework:** Java Swing
+- **Chart Library:** XChart
 
 ## Features
-- **Income and Expense Tracking**: Record income and expenses, with categorization options for clearer analysis.
-- **Budgeting**: Set spending limits for each expense category and monitor budget adherence.
-- **Financial Goals**: Define financial objectives, such as saving for a specific purpose, and track progress toward achieving them.
-- **Spending Analysis**: Visualize spending patterns through graphs and charts, enhancing decision-making.
-- **Alerts**: Receive notifications when approaching budget limits or for upcoming payment reminders.
-- **Reports**: Access reports to keep track of monthly spending, budget status, and goal progress.
-- **Multi-Currency Support**: Easily manage finances in multiple currencies, ideal for travelers or international transactions.
-- **Import/Export**: Import transaction data from bank or credit card statements and export records for compatibility with other financial tools.
-- **Mobile Compatibility**: Access your financial data on-the-go with a mobile-friendly interface.
+1. **Account Management:** Users can create and manage multiple accounts to meet their financial needs.
+2. **Summarized Display:** Provides users with a clear overview of their financial status, including current savings and spending habits.
+3. **Income and Expense Tracking:** Dedicated tabs allow users to conveniently record their income and expenses, facilitating efficient management of finances.
+4. **Interactive Charts:** Visualize monthly expenditure and savings through interactive charts, offering users insightful graphical representations of their financial data.
+5. **Transaction History:** Easily access and review the latest transactions, enabling users to track their financial activity over time.
+6. **Savings Target:** Set savings targets with a progress bar indicating the progress towards the goal for the current month, empowering users to stay focused on their financial objectives.
 
-## System Requirements
-- **Java Version**: Java 8 or higher
-- **Operating System**: Any OS that supports Java
+## Additional Libraries Used
+- **JDBC Driver (MySQL Connector):** Connects Java applications to MySQL databases.
+- **JCalendar:** Provides Date-related components for user-friendly date selection.
+- **XChart:** Generates interactive charts for visualizing financial data.
+- **AbsoluteLayout:** Facilitates precise positioning of UI components.
 
-## Getting Started
-1. **Download**: Obtain the Java Finance Management App and extract the contents.
-2. **Run**: In the terminal or command prompt, navigate to the app directory and run:
-   ```bash
-   java PersonalFinanceManagement
+## Project Structure
+
+```
+📦src
+┣ 📂Chart
+┃ ┗ 📜IncomeExpenseChart.java
+┣ 📂Database
+┃ ┣ 📜DatabaseManager.java
+┃ ┗ 📜UserSession.java
+┣ 📂Home
+┃ ┣ 📜HomePage.form
+┃ ┗ 📜HomePage.java
+┣ 📂Icon
+┃ ┗ 📜icons.png...
+┣ 📂Login
+┃ ┣ 📜Login.form
+┃ ┣ 📜Login.java
+┃ ┣ 📜SignUp.form
+┃ ┗ 📜SignUp.java
+┗ 📂personalfinancemanagement
+┗ 📜PersonalFinanceManagement.java
+```
+
+## Screenshots
+
+### Login
+![Login Page](images/login.png)
+
+### Signup
+![Signup Page](images/signup.png)
+
+### Home
+![Home Page](images/home.png)
+
+### Accounts
+![Accounts Page](images/accounts.png)
+
+### Income
+![Income Page](images/incomes.png)
+
+### Expense
+![Expense Page](images/expenses.png)
+
+### Budget
+![Budget Page](images/budget.png)
+
+## Installation
+1. Clone the repository.
+2. Open the project in Apache NetBeans.
+3. Set up the MySQL database according to the provided schema.
+   - Navigate to the `database_setup` folder and follow the instructions in the `README.md` file to set up the database.
+4. Run the project.
+
 ## Usage
-- **Follow Instructions**: Follow the on-screen instructions to enter income, expenses, set budgets, and define financial goals.
-- **Track and Manage**: Use the app to track spending, set alerts, and view spending visualizations.
+1. Sign up for an account or log in if you already have one.
+2. Add accounts and set up your financial details.
+3. Record your income and expenses.
+4. Monitor your financial status through the provided charts and summaries.
 
-## Note
-This project serves as a sample personal finance tool and may not encompass all the features required for real-world financial management. It can be further developed and customized for enhanced functionality and real-world application.
+## Contributors
+- [Onkar Mendhapurkar](https://github.com/onkar69483)
+- [Mihir Hebalkar](https://github.com/mihirhebalkar)
+- [Sachin Mhetre](https://github.com/SachinMhetre678)
+- [Parimal Kulkarni](https://github.com/parimal1009)
